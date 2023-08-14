@@ -4,6 +4,8 @@
   import { computed, reactive } from 'vue'
   import HeaderComponent from './components/HeaderComponent.vue'
   import MainComponent from './components/MainComponent.vue';
+  import FooterComponent from './components/FooterComponent.vue';
+import FormsComponents from './components/MainComponents/FormsComponents.vue';
 
   const siteInfo = reactive({
     title: 'PabuEnergia',
@@ -30,6 +32,10 @@
   <main>
     <MainComponent />
   </main>
+
+    <footer>
+      <FooterComponent />
+    </footer>
 </template>
 
 

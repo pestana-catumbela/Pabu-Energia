@@ -2,6 +2,7 @@
     import OurCompromiseMainComponents from './MainComponents/OurCompromiseMainComponents.vue'
     import OurMissionMainComponents from './MainComponents/OurMissionMainComponents.vue'
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
+import FormsComponents from './MainComponents/FormsComponents.vue';
     // import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue';
 </script>
 
@@ -22,6 +23,10 @@
     <!-- <section class="ourpartners">
         <OurPartnersMainComponents />
     </section> -->
+
+    <section class="Forms">
+        <FormsComponents />
+    </section>
 </template>
 
 
