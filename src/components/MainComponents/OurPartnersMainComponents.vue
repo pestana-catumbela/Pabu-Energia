@@ -46,6 +46,9 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
+        flex-wrap: wrap;
+        margin: 10px 0;
+        gap: 20px;
     }
 
     .partners__logos__logo{

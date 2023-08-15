@@ -50,6 +50,14 @@
         margin: 0px 0px 40px 0px;
     }
 
+    @media (max-width: 600px){
+        .mission__container__title{
+            width: 400px;
+            font-size: 35px;
+            margin: 0px 0px 40px 0px;
+        }
+    }
+
     .mission__container__title__nobold{
         font-weight: 500;
     }
@@ -61,6 +69,14 @@
     .mission__container__text{
         width: 475px;
         font-size: 40px;
+    }
+
+    @media (max-width: 600px){
+        .mission__container__text{
+            width: 400px;
+            font-size: 35px;
+            margin: 0px 0px 40px 0px;
+        }
     }
 
     .mission__container__text__nobold{
