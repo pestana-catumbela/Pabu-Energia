@@ -36,7 +36,7 @@
     .cards{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;;
     }
 
     .cards__card{

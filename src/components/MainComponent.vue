@@ -3,6 +3,7 @@
     import OurMissionMainComponents from './MainComponents/OurMissionMainComponents.vue'
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
     import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
+    import BusAndButtonComponent from './MainComponents/BusAndButtonComponent.vue'
 </script>
 
 
@@ -17,6 +18,10 @@
 
     <section class="ourcards">
         <CardsMainComponents />
+    </section>
+
+    <section class="busbutton">
+        <BusAndButtonComponent />
     </section>
 
     <section class="ourpartners">
@@ -38,6 +43,11 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    .busbutton{
+        display: flex;
+        justify-content: center;
     }
 
     .ourpartners{

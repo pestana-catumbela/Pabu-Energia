@@ -11,7 +11,7 @@
 
     const media = reactive({
         title: 'Fale Conosco:',
-        email: 'sac@pacaembu.com.br'
+        email: 'pabuenergia@pabuenergia.com.br'
     })
 </script>
 

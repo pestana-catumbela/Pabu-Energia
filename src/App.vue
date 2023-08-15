@@ -41,4 +41,9 @@
 </template>
 
 
-<style scoped></style>
+<style scoped>
+  main{
+    background-image: url('./assets/line_main.png');
+    background-repeat: no-repeat;
+  }
+</style>
