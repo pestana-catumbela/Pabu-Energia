@@ -24,7 +24,7 @@ import FormsComponents from './MainComponents/FormsComponents.vue';
         <OurPartnersMainComponents />
     </section> -->
 
-    <section class="Forms">
+    <section class="formcomponent">
         <FormsComponents />
     </section>
 </template>
@@ -43,5 +43,10 @@ import FormsComponents from './MainComponents/FormsComponents.vue';
             display: flex;
             justify-content: center;
         }
+    }
+
+    .formcomponent {
+     display: flex;
+     justify-content: center;   
     }
 </style>
