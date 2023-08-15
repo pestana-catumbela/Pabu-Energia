@@ -4,6 +4,7 @@
   import { computed, reactive } from 'vue'
   import HeaderComponent from './components/HeaderComponent.vue'
   import MainComponent from './components/MainComponent.vue'
+  import FooterComponent from './components/FooterComponent.vue'
   import WhatsappButtonComponent from './components/WhatsappButtonComponent.vue'
 
   const siteInfo = reactive({
@@ -31,6 +32,10 @@
   <main>
     <MainComponent />
   </main>
+
+  <footer>
+    <FooterComponent />
+  </footer>
 
   <WhatsappButtonComponent />
 </template>
