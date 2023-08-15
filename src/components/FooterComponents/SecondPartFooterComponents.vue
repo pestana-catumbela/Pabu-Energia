@@ -14,18 +14,17 @@ const socialmedia = reactive({
         <span class="socialmedia__title" v-html="socialmedia.title"></span>
         <div class="logos">
             <div class="logos__facebook">
-                <img :src="LogosFacebook" alt="">
+                <a href="https://www.facebook.com/aquiepabu/?locale=pt_BR" target="_blank"><img :src="LogosFacebook" alt=""></a>
             </div>
             <div class="logos__linkedin">
-                <img :src="LogoLinkedin" alt="">
+                <a href="https://br.linkedin.com/company/aquiepabu" target="_blank"><img :src="LogoLinkedin" alt=""></a>
             </div>
             <div class="logos__instagram">
-                <img :src="LogosInstagram" alt="">
+                <a href="https://instagram.com/pabuenergia?igshid=MzRlODBiNWFlZA==" target="_blank"><img :src="LogosInstagram" alt=""></a>
             </div>
         </div>
         <hr>
     </div>
-
 </template>
 
 <style scoped>
@@ -44,7 +43,6 @@ const socialmedia = reactive({
     gap: 10px;
     margin-top: 18px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
-
-
 </style>
