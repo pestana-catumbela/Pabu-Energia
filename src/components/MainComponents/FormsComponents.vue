@@ -8,7 +8,8 @@ const form = reactive({
     function: 'Cargo: ',
     email: 'E-mail: ',
     phone: 'Telefone: ',
-    message: 'Mensagem:'
+    message: 'Mensagem:',
+    assunto: 'Assunto:'
 })
 </script>
 
@@ -16,7 +17,7 @@ const form = reactive({
 <template>
     <div class="form">
         <span class="form__title" v-html="form.title"></span>
-        <form class="form__field">
+        <form action="mailto:infra.n1@pabu.com.br" method="POST" enctype="text/plain" class="form__field">
 
             <div class="form__field__firstbox">
                 <div class="form__field__firstbox__name">
@@ -45,18 +46,24 @@ const form = reactive({
                     <input type="text" class="form__field__secondbox__function__element" placeholder="Digite o seu cargo ou função">
                 </div>
             </div>
+            
+            <div class="form__field__thirdbox__assunto">
+                    <span class="categoryname" v-html="form.assunto"></span>
+                    <input type="text" class="form__field__thirdtbox__assunto__element" placeholder="Digite o assunto">
+                </div>
 
             <div class="form__field__thirdbox">
                 <div class="form__field__thirdbox__message">
                     <span class="categoryname" v-html="form.message"></span>
                     <textarea type="text" class="form__field__firstbox__message__element" placeholder="Digite uma mensagem para retirar suas dúvida"></textarea>
                 </div>
+                
             </div>
+            <div class="form__submit">
+         <a href="infra.n1@pabu.com.br"><input type="submit" class="form__button" value="Enviar"></a></div>
         </form>
 
-        <div class="form__submit">
-            <input type="submit" class="form__button" value="Enviar">
-        </div>
+     
     </div>
 </template>
 
@@ -173,6 +180,16 @@ input::placeholder {
     margin: 0 0 40px 0;
 }
 
+.form__field__thirdbox__assunto {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field__thirdtbox__assunto__element {
+    height: 35px;
+    outline: none;
+    font-size: 18px;
+}
 .form__field__thirdbox__message {
     display: flex;
     flex-direction: column;

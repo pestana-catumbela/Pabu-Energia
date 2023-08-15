@@ -7,7 +7,7 @@ import LogoLinkedin from '../../assets/logo-linkedin.svg'
 const socialmedia = reactive({
     title: 'REDES SOCIAIS',
 })
-</script>
+</script>s
 
 <template>
     <div class="socialmedia">
