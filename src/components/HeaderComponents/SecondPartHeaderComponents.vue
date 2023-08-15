@@ -29,7 +29,8 @@
 
 <style scoped>
     .bg{
-        background-color: rebeccapurple;
+        background-image: url('../../assets/bg_header.jpg');
+        background-size: cover;
     }
 
     .imageheader__element{

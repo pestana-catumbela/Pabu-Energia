@@ -2,7 +2,7 @@
     import OurCompromiseMainComponents from './MainComponents/OurCompromiseMainComponents.vue'
     import OurMissionMainComponents from './MainComponents/OurMissionMainComponents.vue'
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
-    // import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue';
+    import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
 </script>
 
 
@@ -19,9 +19,9 @@
         <CardsMainComponents />
     </section>
 
-    <!-- <section class="ourpartners">
+    <section class="ourpartners">
         <OurPartnersMainComponents />
-    </section> -->
+    </section>
 </template>
 
 
@@ -38,5 +38,10 @@
             display: flex;
             justify-content: center;
         }
+    }
+
+    .ourpartners{
+        display: flex;
+        justify-content: center;
     }
 </style>
