@@ -28,7 +28,7 @@
 
     .button__element__link{
         position: absolute;
-        top: 1200px;
+        top: 1220px;
 
         font-size: 25px;
         font-weight: 600;

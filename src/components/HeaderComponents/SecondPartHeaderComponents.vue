@@ -32,9 +32,14 @@
         background-image: url('../../assets/bg_header.jpg');
         background-size: cover;
     }
+    .imageheader{
+        text-align: center;
+    }
 
     .imageheader__element{
-        width: 100%;
+        /* width: 100%; */
         height: 1200px;
+
+        margin-bottom: 120px;
     }
 </style>

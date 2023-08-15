@@ -12,13 +12,9 @@
 
 <style scoped>
     .compromise__image{
-        /* top: 1480px; */
-        /* left: 696px; */
-        top: 210%;
-        left: 45.8%;
-        width: 1200px;
-        height: 600px;
-
+        width: 1400px;
         position: absolute;
+
+        margin-top: 115px;
     }
 </style>

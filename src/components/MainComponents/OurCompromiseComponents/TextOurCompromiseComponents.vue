@@ -65,4 +65,13 @@
         line-height: 27px;
         text-align: justify;
     }
+
+    @media (max-width: 600px){
+        .ourcompromiseinfos__text__div__paragaph{
+            width: 390px;
+            font-size: 17px;
+            line-height: 27px;
+            text-align: justify;
+        }
+    }
 </style>
