@@ -3,7 +3,8 @@
   import { useHead } from '@vueuse/head'
   import { computed, reactive } from 'vue'
   import HeaderComponent from './components/HeaderComponent.vue'
-  import MainComponent from './components/MainComponent.vue';
+  import MainComponent from './components/MainComponent.vue'
+  import WhatsappButtonComponent from './components/WhatsappButtonComponent.vue'
 
   const siteInfo = reactive({
     title: 'PabuEnergia',
@@ -30,6 +31,8 @@
   <main>
     <MainComponent />
   </main>
+
+  <WhatsappButtonComponent />
 </template>
 
 
