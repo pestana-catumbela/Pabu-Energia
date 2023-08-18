@@ -31,13 +31,12 @@
 
   <main>
     <MainComponent />
+    <WhatsappButtonComponent />
   </main>
 
   <footer>
     <FooterComponent />
   </footer>
-
-  <WhatsappButtonComponent />
 </template>
 
 

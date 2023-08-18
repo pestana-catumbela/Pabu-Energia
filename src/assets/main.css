@@ -9,6 +9,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
-    overflow-x: hidden;
+    overflow-x: hidden;   
 }

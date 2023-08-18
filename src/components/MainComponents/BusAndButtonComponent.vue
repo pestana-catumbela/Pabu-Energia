@@ -45,6 +45,17 @@
         font-size: 20px;
     }
 
+    .button__products:hover{
+        border: none;
+        cursor: pointer;
+        color: #FFFFFF;
+        background-color: #db6d1e;
+        border-radius: 30px;
+        padding: 20px 30px;
+        font-weight: 600;
+        font-size: 20px;
+    }
+
     @media (max-width: 799px){
         .bus__image{
             width: 500px;
@@ -55,6 +66,17 @@
             cursor: pointer;
             color: #FFFFFF;
             background-color: #FF832D;
+            border-radius: 30px;
+            padding: 20px 30px;
+            font-weight: 600;
+            font-size: 17px;
+        }
+
+        .button__products:hover{
+            border: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: #db6d1e;
             border-radius: 30px;
             padding: 20px 30px;
             font-weight: 600;
@@ -72,6 +94,17 @@
             cursor: pointer;
             color: #FFFFFF;
             background-color: #FF832D;
+            border-radius: 30px;
+            padding: 20px 30px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .button__products:hover{
+            border: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: #db6d1e;
             border-radius: 30px;
             padding: 20px 30px;
             font-weight: 600;

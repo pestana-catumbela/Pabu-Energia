@@ -36,10 +36,20 @@
         text-align: center;
     }
 
-    .imageheader__element{
-        /* width: 100%; */
-        height: 1200px;
+    @media (min-width: 1336px){
+        .imageheader__element{
+            width: 100%;
+            height: 1200px;
 
-        margin-bottom: 120px;
+            margin-bottom: 120px;
+        }
+    }
+
+    @media (max-width: 1336px){
+        .imageheader__element{
+            height: 1200px;
+
+            margin-bottom: 120px;
+        }
     }
 </style>

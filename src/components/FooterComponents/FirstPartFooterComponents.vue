@@ -4,9 +4,8 @@
     const chanels = reactive ({
         title: 'CANAIS DE ATENDIMENTO',
         subtitle: 'Televendas:',
-        number: '(11) 4822-6364',
-        time_open: 'Segundas a sexta: das 8h às 18h',
-        time_open_weekend: 'Sábados: das 8h às 14h'
+        number: '(11) 3618-5800',
+        time_open: 'Segundas a sexta: das 8h às 18h'
     })
 
     const media = reactive({
@@ -23,14 +22,17 @@
 
         <div class="footercomponents__chanels__box__text">
             <span class="footercomponents__chanels__subtitle" v-html="chanels.subtitle"></span>
-            <span class="footercomponents__chanels__number" v-html="chanels.number"></span>
+            <a href="tel:551136185800" class="link__number">
+                <span class="footercomponents__chanels__number" v-html="chanels.number"></span>
+            </a>
             <span class="footercomponents__chanels__timeopen" v-html="chanels.time_open"></span>
-            <span class="footercomponents__chanels__timeopenweekend" v-html="chanels.time_open_weekend"></span>
         </div>
 
         <div class="footercomponents__media">
             <span class="footercomponents__media__title" v-html="media.title"></span>
-            <span class="footercomponents__media__title" v-html="media.email"></span>
+            <a href="mailto:pabuenergia@pabuenergia.com.br" class="link__email">
+                <span class="footercomponents__media__email" v-html="media.email"></span>
+            </a>
         </div>
     </div>
 </template>
@@ -72,5 +74,17 @@
         font-weight: 500;
 
         margin: 0px 0px 30px 0px;
+    }
+
+    .link__number{
+        width: 110px;
+        color: #000000;
+        text-decoration: none;
+    }
+
+    .link__email{
+        width: 290px;
+        color: #000000;
+        text-decoration: none;
     }
 </style>

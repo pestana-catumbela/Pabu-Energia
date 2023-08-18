@@ -4,6 +4,7 @@
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
     import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
     import BusAndButtonComponent from './MainComponents/BusAndButtonComponent.vue'
+    import FormMainComponents from './MainComponents/FormMainComponents.vue'
 </script>
 
 
@@ -26,6 +27,10 @@
 
     <section class="ourpartners">
         <OurPartnersMainComponents />
+    </section>
+
+    <section class="ourform">
+        <FormMainComponents />
     </section>
 </template>
 
@@ -51,6 +56,11 @@
     }
 
     .ourpartners{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourform{
         display: flex;
         justify-content: center;
     }

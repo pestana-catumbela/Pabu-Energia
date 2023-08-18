@@ -7,7 +7,8 @@
 
     const socialmedia = reactive({
         title: 'REDES SOCIAIS',
-        logos: [logoFacebook, logoLinkedin, logoInstagram]
+        logos: [logoFacebook, logoLinkedin, logoInstagram],
+        links: ['https://www.facebook.com/aquiepabu', 'https://br.linkedin.com/company/aquiepabu', 'https://www.instagram.com/pabuenergia/?igshid=MzRlODBiNWFlZA%3D%3D']
     })
 </script>
 
@@ -17,7 +18,7 @@
         
         <div class="align">
             <div class="socialmedia__logos" v-for="i in socialmedia.logos.length">
-                <a href="#">
+                <a :href="socialmedia.links[i - 1]" target="_blank">
                     <img :src="socialmedia.logos[i - 1]">
                 </a>
             </div>

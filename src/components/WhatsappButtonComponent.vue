@@ -5,7 +5,7 @@
 
 <template>
     <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?phone=+5511941357581&text=Olá%2C%20Essa%20é%20uma%20mensagem%20de%20teste." target="_blank" class="whatsapp__link">
+        <a href="https://api.whatsapp.com/send?phone=+5511993807756&text=Olá%2C%20Essa%20é%20uma%20mensagem%20de%20teste." target="_blank" class="whatsapp__link">
             <img :src="whatsappIcon" alt="Ícone do Whatsapp" class="whatsapp__link__icon"/>
         </a>
     </div>
