@@ -8,7 +8,7 @@
   import WhatsappButtonComponent from './components/WhatsappButtonComponent.vue'
 
   const siteInfo = reactive({
-    title: 'PabuEnergia',
+    title: 'Pabu Energia',
     description: ''
   })
 
@@ -44,5 +44,13 @@
   main{
     background-image: url('./assets/line_main.png');
     background-repeat: no-repeat;
+  }
+
+  @media (max-width: 800px){
+    main{
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
   }
 </style>

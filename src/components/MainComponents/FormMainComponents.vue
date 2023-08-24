@@ -15,16 +15,16 @@
         methods: {
             sendEmail() {
                 Email.send({
-                    Host: 'smtp.elasticemail.com',
-                    Username: "infra.n1@pabu.com.br",
-                    Password: "66E33FC2B677A17DA9EC3FC6821ED20C877D",
-                    SecureToken: '7a0415d5-a1f2-4779-9bbd-32f937eaadfd',
+                    Host: 'smtp.gmail.com',
+                    Username: "pacaembu@pacaembuautopecas",
+                    Password: "P@BUo500MBB",
+                    // SecureToken: '7a0415d5-a1f2-4779-9bbd-32f937eaadfd',
                     To: 'pestanacatumbela@gmail.com',
-                    From: 'infra.n1@pabu.com.br',
+                    From: 'pacaembu@pacaembuautopecas',
                     name: this.name,
                     Subject: this.subject,
                     Body: this.message
-                }).then(() => alert('Email enviado com sucesso!'))
+                }).then((message) => alert(message))
                     this.name = '',
                     this.email = '',
                     this.company = '',

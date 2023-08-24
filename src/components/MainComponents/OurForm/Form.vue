@@ -1,86 +1,65 @@
-<!-- <script>
-    import { reactive } from 'vue'
-    import { Email } from '../../assets/smtp/smtp.js'
+<script>
+    export default{
+        name: 'OurForm',
 
-    const formInfos = reactive({
-        title: 'FALE CONOSCO',
-        name: 'Nome',
-        company: 'Empresa',
-        function: 'Cargo',
-        email: 'E-mail',
-        phone: 'Telefone',
-        subject: 'Assunto',
-        message: 'Mensagem'
-    })
-
-    export default {
-        data() {
-            return {
-                name: '',
+        data(){
+            return{
                 email: '',
-                subject: '',
-                message: ''
-            };
+                reg: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,24}))$/
+            }
         },
 
         methods: {
-            sendEmail() {
-                Email.send({
-                    SecureToken: '',
-                    To: 'pestannapedrocatumbella@gmail.com',
-                    From: 'infra.n1@pabu.com.br',
-                    name: this.name,
-                    Subject: this.subject,
-                    Body: this.message
-                }).then((message) => alert(message))
-            },
-        },
-    };
+            isEmailValid: function() {
+                return (this.email == "")? "" : (this.reg.test(this.email)) ? 'has-success' : 'has-error';
+            }
+        }
+    }
 </script>
 
 
 <template>
     <div id="form" class="form">
-        <span class="form__title" v-html="formInfos.title"></span>
+        <span class="form__title">FALE CONOSCO</span>
 
-        <form class="form__field" @submit.prevent="sendEmail">
+        <form method="POST" action="http://localhost/pabuenergia/src/components/MainComponents/OurForm/" target="_blank" class="form__field">
             <div class="form__field__firstbox">
                 <div class="form__field__firstbox__name">
-                    <span v-html="formInfos.name"></span>
-                    <input type="text" class="form__field__firstbox__name__element" placeholder="Digite seu nome completo" required>
+                    <span>Nome</span>
+                    <input type="text" id="name" name="name" class="form__field__firstbox__name__element" placeholder="Digite seu nome completo" required>
                 </div>
 
                 <div class="form__field__firstbox__email">
-                    <span class="categoryname" v-html="formInfos.email"></span>
-                    <input type="email" class="form__field__firstbox__email__element" placeholder="Digite seu e-mail" required>
+                    <span>E-mail</span>
+                    <input type="email" id="email" name="email" class="form__field__firstbox__email__element" placeholder="Digite seu e-mail" v-model="email" required>
                 </div>
             </div>
 
             <div class="form__field__secondbox">
                 <div class="form__field__secondbox__company">
-                    <span v-html="formInfos.company"></span>
-                    <input type="text" class="form__field__secondbox__company__element" placeholder="Digite o nome da sua empresa" required>
+                    <span>Empresa</span>
+                    <input type="text" id="company" name="company" class="form__field__secondbox__company__element" placeholder="Digite o nome da sua empresa" required>
                 </div>
 
                 <div class="form__field__secondbox__function">
-                    <span v-html="formInfos.function"></span>
-                    <input type="text" class="form__field__secondbox__function__element" placeholder="Digite o seu cargo ou função" required>
+                    <span>Cargo</span>
+                    <input type="text" id="function" name="function" class="form__field__secondbox__function__element" placeholder="Digite o seu cargo ou função" required>
                 </div>
 
                 <div class="form__field__firstbox__number">
-                    <span v-html="formInfos.phone"></span>
-                    <input type="text" class="form__field__firstbox__number__element" placeholder="Digite seu número de telefone" required>
+                    <span>Telefone</span>
+                    <input type="text" id="telephone" name="telephone" class="form__field__firstbox__number__element" placeholder="Digite seu número de telefone" required>
                 </div>
             </div>
             
             <div class="form__field__thirdbox">
-                <span v-html="formInfos.subject"></span>
-                <input type="text" class="form__field__thirdbox__element" placeholder="Digite o assunto" required>
+                <span>Assunto</span>
+                <input type="text" id="subject" name="subject" class="form__field__thirdbox__element" placeholder="Digite o assunto" required>
             </div>
 
             <div class="form__field__fourthbox">
-                <span v-html="formInfos.message"></span>
-                <textarea type="text" class="form__field__fourthbox__element" placeholder="Digite sua mensagem" required></textarea>
+                <span>Mensagem</span>
+                <textarea type="text" id="message" name="message" class="form__field__fourthbox__element" placeholder="Digite sua mensagem" required></textarea>
             </div>
 
             <div class="form__submit">
@@ -256,4 +235,39 @@
         font-weight: 500;
         font-size: 25px;
     }
-</style> -->
+
+    .form__button:hover{
+        border: none;
+        cursor: pointer;
+        color: #FFFFFF;
+        background-color: #db6d1e;
+        padding: 20px 60px 20px 60px;
+        border-radius: 40px;
+        font-weight: 500;
+        font-size: 25px;
+    }
+
+    @media (max-width: 800px){
+        .form__button{
+            border: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: #FC8539;
+            padding: 20px 60px 20px 60px;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        .form__button:hover{
+            border: none;
+            cursor: pointer;
+            color: #FFFFFF;
+            background-color: #db6d1e;
+            padding: 20px 60px 20px 60px;
+            border-radius: 40px;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+</style>

@@ -13,7 +13,9 @@
         </div>
 
         <div class="button">
-            <button class="button__products" v-html="buttonText"></button>
+            <a href="https://pabu.com.br/energia" target="_blank">
+                <button class="button__products" v-html="buttonText"></button>
+            </a>
         </div>
     </div>
 </template>

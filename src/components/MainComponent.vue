@@ -4,7 +4,7 @@
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
     import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
     import BusAndButtonComponent from './MainComponents/BusAndButtonComponent.vue'
-    import FormMainComponents from './MainComponents/FormMainComponents.vue'
+    import FormMainComponents from './MainComponents/OurForm/Form.vue'
 </script>
 
 
