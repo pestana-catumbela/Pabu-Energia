@@ -1,4 +1,7 @@
 <script setup>
+import FirstPartFooterComponents from './FooterComponents/FirstPartFooterComponents.vue';
+import SecondPartFooterComponents from './FooterComponents/SecondPartFooterComponents.vue';
+import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterComponents.Vue';
     import FirstPartFooterComponents from './FooterComponents/FirstPartFooterComponents.vue'
     import SecondPartFooterComponents from './FooterComponents/SecondPartFooterComponents.vue'
     import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterComponents.Vue'
@@ -7,6 +10,13 @@
 <template>
     <div class="footer">
         <div class="footer__servicechannel">
+            <FirstPartFooterComponents/> 
+        </div>
+        <div class="footer__socialmedia">
+            <SecondPartFooterComponents/>
+        </div>
+        <div class="footer__copyright">
+            <ThirdPartFooterComponents/>
             <FirstPartFooterComponents /> 
         </div>
         <div class="footer__socialmedia">
@@ -39,4 +49,5 @@
     display: flex;
     justify-content: center;
 }
+</style>
 </style>

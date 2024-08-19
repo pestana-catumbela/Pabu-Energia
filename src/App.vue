@@ -3,10 +3,12 @@
   import { useHead } from '@vueuse/head'
   import { computed, reactive } from 'vue'
   import HeaderComponent from './components/HeaderComponent.vue'
+  import MainComponent from './components/MainComponent.vue';
+  import FooterComponent from './components/FooterComponent.vue';
+import FormsComponents from './components/MainComponents/FormsComponents.vue';
   import MainComponent from './components/MainComponent.vue'
   import FooterComponent from './components/FooterComponent.vue'
   import WhatsappButtonComponent from './components/WhatsappButtonComponent.vue'
-
   const siteInfo = reactive({
     title: 'Pabu Energia',
     description: ''
@@ -34,6 +36,10 @@
     <WhatsappButtonComponent />
   </main>
 
+
+    <footer>
+      <FooterComponent />
+    </footer>
   <footer>
     <FooterComponent />
   </footer>

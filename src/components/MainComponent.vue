@@ -2,6 +2,8 @@
     import OurCompromiseMainComponents from './MainComponents/OurCompromiseMainComponents.vue'
     import OurMissionMainComponents from './MainComponents/OurMissionMainComponents.vue'
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
+import FormsComponents from './MainComponents/FormsComponents.vue';
+    // import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue';
     import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
     import BusAndButtonComponent from './MainComponents/BusAndButtonComponent.vue'
     import FormMainComponents from './MainComponents/OurForm/Form.vue'
@@ -27,6 +29,10 @@
 
     <section class="ourpartners">
         <OurPartnersMainComponents />
+    </section> -->
+
+    <section class="formcomponent">
+        <FormsComponents />
     </section>
 
     <section class="ourform">
@@ -50,6 +56,9 @@
         }
     }
 
+    .formcomponent {
+     display: flex;
+     justify-content: center;   
     .busbutton{
         display: flex;
         justify-content: center;
