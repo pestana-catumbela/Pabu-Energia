@@ -2,6 +2,9 @@
 import FirstPartFooterComponents from './FooterComponents/FirstPartFooterComponents.vue';
 import SecondPartFooterComponents from './FooterComponents/SecondPartFooterComponents.vue';
 import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterComponents.Vue';
+    import FirstPartFooterComponents from './FooterComponents/FirstPartFooterComponents.vue'
+    import SecondPartFooterComponents from './FooterComponents/SecondPartFooterComponents.vue'
+    import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterComponents.Vue'
 </script>
 
 <template>
@@ -14,6 +17,13 @@ import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterCompone
         </div>
         <div class="footer__copyright">
             <ThirdPartFooterComponents/>
+            <FirstPartFooterComponents /> 
+        </div>
+        <div class="footer__socialmedia">
+            <SecondPartFooterComponents />
+        </div>
+        <div class="footer__copyright">
+            <ThirdPartFooterComponents />
         </div>
     </div>
 </template>
@@ -39,4 +49,5 @@ import ThirdPartFooterComponents from './FooterComponents/ThirdPartFooterCompone
     display: flex;
     justify-content: center;
 }
+</style>
 </style>

@@ -4,6 +4,9 @@
     import CardsMainComponents from './MainComponents/CardsMainComponents.vue'
 import FormsComponents from './MainComponents/FormsComponents.vue';
     // import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue';
+    import OurPartnersMainComponents from './MainComponents/OurPartnersMainComponents.vue'
+    import BusAndButtonComponent from './MainComponents/BusAndButtonComponent.vue'
+    import FormMainComponents from './MainComponents/OurForm/Form.vue'
 </script>
 
 
@@ -20,12 +23,20 @@ import FormsComponents from './MainComponents/FormsComponents.vue';
         <CardsMainComponents />
     </section>
 
-    <!-- <section class="ourpartners">
+    <section class="busbutton">
+        <BusAndButtonComponent />
+    </section>
+
+    <section class="ourpartners">
         <OurPartnersMainComponents />
     </section> -->
 
     <section class="formcomponent">
         <FormsComponents />
+    </section>
+
+    <section class="ourform">
+        <FormMainComponents />
     </section>
 </template>
 
@@ -48,5 +59,18 @@ import FormsComponents from './MainComponents/FormsComponents.vue';
     .formcomponent {
      display: flex;
      justify-content: center;   
+    .busbutton{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourpartners{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ourform{
+        display: flex;
+        justify-content: center;
     }
 </style>

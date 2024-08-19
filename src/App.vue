@@ -6,9 +6,11 @@
   import MainComponent from './components/MainComponent.vue';
   import FooterComponent from './components/FooterComponent.vue';
 import FormsComponents from './components/MainComponents/FormsComponents.vue';
-
+  import MainComponent from './components/MainComponent.vue'
+  import FooterComponent from './components/FooterComponent.vue'
+  import WhatsappButtonComponent from './components/WhatsappButtonComponent.vue'
   const siteInfo = reactive({
-    title: 'PabuEnergia',
+    title: 'Pabu Energia',
     description: ''
   })
 
@@ -31,12 +33,30 @@ import FormsComponents from './components/MainComponents/FormsComponents.vue';
 
   <main>
     <MainComponent />
+    <WhatsappButtonComponent />
   </main>
+
 
     <footer>
       <FooterComponent />
     </footer>
+  <footer>
+    <FooterComponent />
+  </footer>
 </template>
 
 
-<style scoped></style>
+<style scoped>
+  main{
+    background-image: url('./assets/line_main.png');
+    background-repeat: no-repeat;
+  }
+
+  @media (max-width: 800px){
+    main{
+      background-image: url('');
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+</style>

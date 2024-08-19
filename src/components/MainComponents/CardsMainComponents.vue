@@ -3,7 +3,7 @@
     import stockIcon from '../../assets/stock_icon.png'
     import branchIcon from '../../assets/branch_icon.png'
     import stateIcon from '../../assets/state_icon.png'
-    import clientIcon from '../../assets/branch_icon.png'
+    import clientIcon from '../../assets/client_icon.png'
 
     let numberCards = ref(4)
 
@@ -36,7 +36,7 @@
     .cards{
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
+        flex-wrap: wrap;;
     }
 
     .cards__card{
